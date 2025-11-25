@@ -123,6 +123,16 @@ export default function Home() {
             Secure, reliable Polkadot validation with global infrastructure. 
             Nominate today and earn rewards while securing the network.
           </p>
+
+          {/* NEW: Ready to Setup link to Need Help section */}
+          <div className="mt-6 flex justify-center">
+            <Link
+              href="#need-help"
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-slate-900/70 border border-pink-700/60 text-pink-300 text-sm font-medium hover:bg-pink-700/20 hover:border-pink-500 transition-colors"
+            >
+              Ready to set up? Jump to step-by-step help
+            </Link>
+          </div>
         </header>
 
         {/* Stats Bar */}
@@ -353,7 +363,10 @@ export default function Home() {
         </section>
 
         {/* Need Help? */}
-        <section className="mb-12 rounded-2xl border border-green-700/50 bg-green-950/20 p-6 md:p-8">
+        <section
+          id="need-help"
+          className="mb-12 rounded-2xl border border-green-700/50 bg-green-950/20 p-6 md:p-8"
+        >
           <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2 text-green-300">
             🤝 Need Help Getting Started?
           </h2>
